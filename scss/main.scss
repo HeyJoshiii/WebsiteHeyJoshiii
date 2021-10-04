@@ -1,0 +1,66 @@
+$theme-colors: (
+        "primary": red,
+        "secondary": blue,
+        "rose": #ffbdff,
+        "olive": #446312,
+        "pastell-light-red": #ffcfcc,
+        "dark-red": #4a0602,
+        "super-light-grey": #ede8e8,
+        "dark-gray": #454441,
+        "turkish-yellow": #fff200,
+        "navbar-orange": #ffa801,
+        "light-orange": #ffc048,
+        "twitch-purple": #a55eea,
+        "book-blue": #2c2c54,
+        "splatoon-green": #4cd137,
+        "solid-grey": #777777,
+        "dark-grey-twitch": #49454d,
+        "table-border-grey": #413d45,
+        "MeetEU-blue": #2d4492,
+        "BReady-red": #e31016,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@media (min-width: 992px)
+{
+  #interests
+  {
+    display: block;
+  }
+  #interestList
+  {
+    display: block;
+  }
+  #interestToggler
+  {
+    display: none;
+  }
+  #twitch-embed
+  {
+    display: block;
+  }
+  #bookTextInfo
+  {
+    width: 50%;
+  }
+  #carouselFanartBook
+  {
+    width: 50%;
+  }
+  #lastWords
+  {
+    width: 50%;
+  }
+  #carouselFanart
+  {
+    width: 50%;
+  }
+}
+
+#BookBody {
+  background-color: #3c3c64;
+  background-image: url("../data/pictures/Hintergrund_Website_Buch.jpg");
+  background-position: center top;
+  background-size: 100% auto;
+}

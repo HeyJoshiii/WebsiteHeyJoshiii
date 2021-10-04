@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>HeyJoshiii Home</title>
+</head>
+<body onload="loadSound()">
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-md bg-navbar-orange navbar-dark sticky-top">
+    <div class="container lead fw-bolder">
+        <a href="index.html" class="navbar-brand">HeyJoshiii</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="HeyJoshiii_Twitch.html" class="nav-link">Twitch</a>
+                </li>
+                <li class="nav-item">
+                    <a href="HeyJoshiii_Buch.html" class="nav-link">Buch</a>
+                </li>
+                <li class="nav-item">
+                    <a href="HeyJoshiii_Sonstiges.html" class="nav-link">Sonstiges</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Section 1-->
+<section class="bg-navbar-orange bg-opacity-25 text-black-50 p-4 pb-3 text-center">
+    <div class="container">
+        <div class="d-sm-flex justify-content-sm-around">
+            <div>
+                <h2>Willkommen auf HeyJoshiii</h2>
+                <p onclick="playSound()">Guten Morgen, sexy Baby!</p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!--Section 2-->
+<section class="bg-light text-black-50 p-5 text-center text-md-start">
+    <div class="container">
+        <div class="d-md-flex justify-content-sm-evenly align-items-center">
+            <img class="img-fluid w-50" src="data/pictures/Joshi_Front.jpeg"
+                 alt="Bild von HeyJoshiii">
+            <div class="px-sm-1 pt-3 pt-sm-0 px-sm-3">
+                <div class="d-flex flex-column">
+                    <div>
+                        <h2>Die Website und ich</h2>
+                        <p class="px-sm-1">
+                            Ich bin 19 Jahre jung und stehe noch ziemlich am Anfang meines Lebens. Ich fand's schon
+                            immer cool, eigene Dinge zu gestalten. Ich hatte lange nicht die Möglichkeiten dazu,
+                            jetzt aber durch mein Studium habe ich mich gut weiterentwickelt. Deswegen habe ich es
+                            in Angriff genommen, meinen Twitch und weitere Dinge wie diese Website als Projekt zu
+                            starten. <br>Auf der Website findet ihr eigentlich alles Grundlegende über mich, mein
+                            Twitch und mein Buch. Das Ganze mache ich als Projekt nebenher, ich finde es einfach
+                            so geordneter und eine coole Übung für's Webdesign, was immerhin ein Teil meines
+                            Studiums ist ^^
+                        </p>
+                    </div>
+                    <button class="btn btn-super-light-grey collapse-show" id="interestToggler" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#interestList">
+                        <span class="lead">Meine Interessen</span> <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="interests">
+                        <h2>Meine Interessen</h2>
+                    </div>
+                    <ul class="list-group list-group-flush collapse" id="interestList">
+                        <li class="list-group-item"><span class="lead">Gaming</span><br>(obviously haha, eine
+                            Liste meiner Spiele gibt's <span><a
+                                    class="text-dark-red" href=HeyJoshiii_Twitch.html#Gamesection>hier</a></span>)</li>
+                        <li class="list-group-item"><span class="lead">Content-Creation</span><br>(Auf
+                            <span><a class="text-dark-red" href=HeyJoshiii_Twitch.html>Twitch</a></span> &
+                            anderen Plattformen)</li>
+                        <li class="list-group-item"><span class="lead">Programmieren</span><br>(lerne es noch
+                            in der Uni & im Stream)</li>
+                        <li class="list-group-item"><span class="lead">Sprachen lernen</span><br>(ich kann
+                            DE/EN/NL fließend und FR okay)</li>
+                        <li class="list-group-item"><span class="lead">Ehrenamtliches politisches Engagement</span>
+                            <br>(<span><a class="text-dark-red" href="https://meeteu.eu"
+                                          target="_blank">Hier</a></span> z.B.)</li>
+                        <li class="list-group-item"><span class="lead">Sport</span><br>Wie Radfahren,
+                            Longboarden, Eislaufen, Badminton</li>
+                        <li class="list-group-item"><span class="lead">Musik hören</span><br>(Mein Spotify
+                            findet ihr <span><a class="text-dark-red" href="https://open.spotify.com/user/5iaem
+                                hq4r1mtoraludkfwkvob?si=2a507cbfd87b45fd" target="_blank">hier</a></span>)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Section 3-->
+<section class="bg-dark-gray bg-opacity-75 text-center text-white p-5">
+    <div class="container">
+        <div>
+            <h2 class="pb-3">Meine Projekte</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 text-center h-100">
+            <div class="col">
+                <div class="card bg-super-light-grey text-dark-gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Studium</h5>
+                        <p class="class-text">
+                            Aktuell studiere ich an der Universität zu Köln "Medienkulturwissenschaften und
+                            Medieninformatik" im 4. Semester. Ich lerne hier alles zu Medien- und Kulturtheorie
+                            (Film, Theater, Fernsehen, Radio, soziale Medien, etc.) und dazu noch Softwareentwicklung.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-super-light-grey text-dark-gray h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Twitch</h5>
+                        <p class="class-text">
+                            Seit dem 19.11.2020 streame ich inzwischen auf Twitch. Erst war es eher aus Spaß an der
+                            Freude, inzwischen ist es aber wirklich ein cooles Nebenprojekt geworden, welches ich auch
+                            sicher auf lange Sicht verfolgen werde. Meinen Kanal findest du
+                            <span><a class="text-dark-red" href=HeyJoshiii_Twitch.html>hier</a></span>!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-super-light-grey text-dark-gray h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Buch</h5>
+                        <p class="class-text">
+                            Ich habe vor einiger Zeit angefangen, mein erstes eigenes Buch zu schreiben. Hier
+                            driften wir ab in eine Urban-Fantasy-Welt voller Drama, Mysterien und Abenteuer.
+                            Die Kapitel lese ich gerne auch im Stream vor und gebe euch Live-Einblicke beim
+                            Schreiben auf meinem <span><a class="text-dark-red"
+                                                          href="https://www.twitch.tv/joshis_krimskrams"
+                                                          target="_blank">Zweitkanal</a>.</span>
+                            Wenn du mehr über Vito's Leben und die Astralwelt erfahren willst, dann bist du
+                            <span><a class="text-dark-red" href=HeyJoshiii_Buch.html>hier</a></span> richtig!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-super-light-grey text-dark-gray h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Sonstiges</h5>
+                        <p class="class-text">
+                            Neben diesen drei großen Projekten verfolge ich noch ein paar andere nebenbei.
+                            Beispielsweise engagiere ich mich gerne politisch, weshalb ich im Team des
+                            paneuropäischen Projektes <span><a class="text-dark-red"
+                                                               href="https://meeteu.eu"
+                                                               target="_blank">MeetEU</a></span> bin. Auch
+                            Gamingtechnisch geht es noch weiter als das Streamen, denn ich spiele Splatoon
+                            Competetive im Team <span><a class="text-dark-red"
+                                                         href="https://twitter.com/BReady11913952"
+                                                         target="_blank">B-Ready</a></span>. Genaueres über alle
+                            anderen Projekte findet ihr <span><a class="text-dark-red"
+                                                                 href=HeyJoshiii_Sonstiges.html>hier</a></span> <3
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="p-4 bg-navbar-orange">
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <div>
+                <p class="lead pt-2">Copyright &copy; 2021 HeyJoshiii</p>
+            </div>
+            <div>
+                <a class="text-black text-opacity-75 px-1" href="https://discord.gg/ZvkFdkrGvM" target="_blank">
+                    <i class="bi bi-discord h2"></i></a>
+                <a class="text-black text-opacity-75 px-1" href="https://www.twitch.tv/heyjoshiii" target="_blank">
+                    <i class="bi bi-twitch h2"></i></a>
+                <a class="text-black text-opacity-75 px-1" href="https://www.youtube.com/channel/UCLroGCuBR3DYNaHov64i-Yw"
+                   target="_blank"><i class="bi bi-youtube h2"></i></a>
+                <a class="text-black text-opacity-75 px-1" href="https://twitter.com/HeyJoshiii" target="_blank">
+                    <i class="bi bi-twitter h2"></i></a>
+                <a class="text-black text-opacity-75 px-1" href="https://www.instagram.com/joshi_0402/?hl=de"
+                   target="_blank"><i class="bi bi-instagram h2"></i></a>
+                <a class="text-black text-opacity-75 px-1" href="https://github.com/HeyJoshiii" target="_blank">
+                    <i class="bi bi-github h2"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+<script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+<script>
+    function loadSound() {
+        createjs.Sound.registerSound("../data/sounds/Guten_Morgen_Sexy_Baby.mp3","GMSB")
+    }
+    function playSound() {
+        createjs.Sound.play("GMSB")
+    }
+</script>
+</body>
+</html>
