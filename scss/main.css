@@ -12256,6 +12256,14 @@ textarea.form-control-lg {
   #carouselFanart {
     width: 50%;
   }
+
+  #carouselScreenshots {
+    width: 50%;
+  }
+
+  #carouselScreenshots2 {
+    width: 50%;
+  }
 }
 #BookBody {
   background-color: #3c3c64;
